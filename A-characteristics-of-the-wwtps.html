@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Enterotyping Danish Wastewater Treatment Plants</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="Enterotyping Danish Wastewater Treatment Plants">
+  <meta name="generator" content="bookdown 0.3 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Enterotyping Danish Wastewater Treatment Plants" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Enterotyping Danish Wastewater Treatment Plants" />
+  
+  
+  
+
+<meta name="author" content="Kasper Skytte Andersen">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="8-conclusion.html">
+<link rel="next" href="references.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./"></a></li>
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="1-introduction.html"><a href="1-introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="1-introduction.html"><a href="1-introduction.html#wastewater-treatment"><i class="fa fa-check"></i><b>1.1</b> Wastewater treatment</a></li>
+<li class="chapter" data-level="1.2" data-path="1-introduction.html"><a href="1-introduction.html#s-amplicon-sequencing"><i class="fa fa-check"></i><b>1.2</b> 16S amplicon sequencing</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="2-ordination.html"><a href="2-ordination.html"><i class="fa fa-check"></i><b>2</b> Ordination in Microbial Ecology</a><ul>
+<li class="chapter" data-level="2.1" data-path="2-ordination.html"><a href="2-ordination.html#exploratoryvsexplanatory"><i class="fa fa-check"></i><b>2.1</b> Exploratory vs. Explanatory</a></li>
+<li class="chapter" data-level="2.2" data-path="2-ordination.html"><a href="2-ordination.html#nichedoublezero"><i class="fa fa-check"></i><b>2.2</b> Niche theory and the double-zero problem</a></li>
+<li class="chapter" data-level="2.3" data-path="2-ordination.html"><a href="2-ordination.html#distance-based-ordination"><i class="fa fa-check"></i><b>2.3</b> Distance-based ordination</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="2-ordination.html"><a href="2-ordination.html#principal-coordinates-analysis"><i class="fa fa-check"></i><b>2.3.1</b> Principal Coordinates Analysis</a></li>
+<li class="chapter" data-level="2.3.2" data-path="2-ordination.html"><a href="2-ordination.html#non-metric-multidimensional-scaling"><i class="fa fa-check"></i><b>2.3.2</b> non-Metric Multidimensional Scaling</a></li>
+<li class="chapter" data-level="2.3.3" data-path="2-ordination.html"><a href="2-ordination.html#metrics"><i class="fa fa-check"></i><b>2.3.3</b> Distance- and (dis)similarity metrics</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="2-ordination.html"><a href="2-ordination.html#eigenanalysis-based-ordination"><i class="fa fa-check"></i><b>2.4</b> Eigenanalysis-based ordination</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="2-ordination.html"><a href="2-ordination.html#principal-components-analysis"><i class="fa fa-check"></i><b>2.4.1</b> Principal Components Analysis</a></li>
+<li class="chapter" data-level="2.4.2" data-path="2-ordination.html"><a href="2-ordination.html#redundancy-analysis"><i class="fa fa-check"></i><b>2.4.2</b> Redundancy Analysis</a></li>
+<li class="chapter" data-level="2.4.3" data-path="2-ordination.html"><a href="2-ordination.html#correspondence-analysis"><i class="fa fa-check"></i><b>2.4.3</b> Correspondence Analysis</a></li>
+<li class="chapter" data-level="2.4.4" data-path="2-ordination.html"><a href="2-ordination.html#CCA"><i class="fa fa-check"></i><b>2.4.4</b> Canonical Correspondence Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="2-ordination.html"><a href="2-ordination.html#transformation"><i class="fa fa-check"></i><b>2.5</b> Data transformation</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="3-aims.html"><a href="3-aims.html"><i class="fa fa-check"></i><b>3</b> Aims</a></li>
+<li class="chapter" data-level="4" data-path="4-mm.html"><a href="4-mm.html"><i class="fa fa-check"></i><b>4</b> Materials and Methods</a><ul>
+<li class="chapter" data-level="4.1" data-path="4-mm.html"><a href="4-mm.html#sampling"><i class="fa fa-check"></i><b>4.1</b> Sampling</a></li>
+<li class="chapter" data-level="4.2" data-path="4-mm.html"><a href="4-mm.html#library-preparation"><i class="fa fa-check"></i><b>4.2</b> Library preparation</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="4-mm.html"><a href="4-mm.html#polymerase-chain-reaction"><i class="fa fa-check"></i><b>4.2.1</b> Polymerase Chain Reaction</a></li>
+<li class="chapter" data-level="4.2.2" data-path="4-mm.html"><a href="4-mm.html#library-pool-cleanup"><i class="fa fa-check"></i><b>4.2.2</b> Library pool cleanup</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="4-mm.html"><a href="4-mm.html#dna-sequencing-and-bioinformatics"><i class="fa fa-check"></i><b>4.3</b> DNA sequencing and bioinformatics</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="4-mm.html"><a href="4-mm.html#filtering"><i class="fa fa-check"></i><b>4.3.1</b> Filtering</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="4-mm.html"><a href="4-mm.html#data-visualisation"><i class="fa fa-check"></i><b>4.4</b> Data visualisation</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="5-results1.html"><a href="5-results1.html"><i class="fa fa-check"></i><b>5</b> Results Part 1: Exploring</a><ul>
+<li class="chapter" data-level="5.1" data-path="5-results1.html"><a href="5-results1.html#how-does-the-microbial-community-composition-describe-the-wastewater-treatment-plants"><i class="fa fa-check"></i><b>5.1</b> How does the microbial community composition describe the wastewater treatment plants?</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="6-results-part-2-explaining.html"><a href="6-results-part-2-explaining.html"><i class="fa fa-check"></i><b>6</b> Results Part 2: Explaining</a><ul>
+<li class="chapter" data-level="6.1" data-path="6-results-part-2-explaining.html"><a href="6-results-part-2-explaining.html#the-effect-of-plant-design-on-the-microbial-community-composition"><i class="fa fa-check"></i><b>6.1</b> The effect of plant design on the microbial community composition</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="6-results-part-2-explaining.html"><a href="6-results-part-2-explaining.html#configuration"><i class="fa fa-check"></i><b>6.1.1</b> Configuration</a></li>
+<li class="chapter" data-level="6.1.2" data-path="6-results-part-2-explaining.html"><a href="6-results-part-2-explaining.html#enhanced-biological-phosphorus-removal-ebpr-vs-biological-nutrient-removal-bnr"><i class="fa fa-check"></i><b>6.1.2</b> Enhanced Biological Phosphorus Removal (EBPR) vs Biological Nutrient Removal (BNR)</a></li>
+<li class="chapter" data-level="6.1.3" data-path="6-results-part-2-explaining.html"><a href="6-results-part-2-explaining.html#the-effect-of-primary-setling"><i class="fa fa-check"></i><b>6.1.3</b> The effect of primary setling</a></li>
+<li class="chapter" data-level="6.1.4" data-path="6-results-part-2-explaining.html"><a href="6-results-part-2-explaining.html#the-effect-of-industral-inflow-water"><i class="fa fa-check"></i><b>6.1.4</b> The effect of industral inflow water</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="6-results-part-2-explaining.html"><a href="6-results-part-2-explaining.html#plant-stability-over-time"><i class="fa fa-check"></i><b>6.2</b> Plant stability over time</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="7-discussion.html"><a href="7-discussion.html"><i class="fa fa-check"></i><b>7</b> Discussion</a></li>
+<li class="chapter" data-level="8" data-path="8-conclusion.html"><a href="8-conclusion.html"><i class="fa fa-check"></i><b>8</b> Conclusion</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="A-characteristics-of-the-wwtps.html"><a href="A-characteristics-of-the-wwtps.html"><i class="fa fa-check"></i><b>A</b> Characteristics of the WWTPs</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Enterotyping Danish Wastewater Treatment Plants</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="characteristics-of-the-wwtps" class="section level1">
+<h1><span class="header-section-number">A</span> Characteristics of the WWTPs</h1>
+<table>
+<caption><span id="tab:summarytable">Table A.1: </span>Summary of the design of the 32 wastewater treatment plants. EBPR: Enhanced Biological Phosphorous Removal, BNR: Biological Nutrient Removal, RSS: Return Sludge Sidestream, Industrial Inf.: Industrial Inflow</caption>
+<thead>
+<tr class="header">
+<th align="left">Plant</th>
+<th align="left">Configuration</th>
+<th align="left">Design</th>
+<th align="left">RSS</th>
+<th align="left">Primary Setling</th>
+<th align="left">Digester</th>
+<th align="left">Industrial Inf.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Aabenraa</td>
+<td align="left">Alternating</td>
+<td align="left">EBPR</td>
+<td align="left">RSS</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Low</td>
+</tr>
+<tr class="even">
+<td align="left">Aaby</td>
+<td align="left">Alternating</td>
+<td align="left">EBPR</td>
+<td align="left">No RSS</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="odd">
+<td align="left">Aalborg E</td>
+<td align="left">Alternating</td>
+<td align="left">EBPR</td>
+<td align="left">RSS</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="even">
+<td align="left">Aalborg W</td>
+<td align="left">Alternating</td>
+<td align="left">EBPR</td>
+<td align="left">RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="odd">
+<td align="left">Aars</td>
+<td align="left">Alternating</td>
+<td align="left">BNR</td>
+<td align="left">No RSS</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">High</td>
+</tr>
+<tr class="even">
+<td align="left">Avedoere</td>
+<td align="left">Alternating</td>
+<td align="left">BNR</td>
+<td align="left">No RSS</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="odd">
+<td align="left">Bjergmarken</td>
+<td align="left">Alternating</td>
+<td align="left">EBPR</td>
+<td align="left">No RSS</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="even">
+<td align="left">Boeslum</td>
+<td align="left">Recirculation</td>
+<td align="left">EBPR</td>
+<td align="left">No RSS</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Low</td>
+</tr>
+<tr class="odd">
+<td align="left">Egaa</td>
+<td align="left">Recirculation</td>
+<td align="left">EBPR</td>
+<td align="left">RSS</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">High</td>
+</tr>
+<tr class="even">
+<td align="left">Ejby Moelle</td>
+<td align="left">Alternating</td>
+<td align="left">EBPR</td>
+<td align="left">No RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">High</td>
+</tr>
+<tr class="odd">
+<td align="left">Esbjerg E</td>
+<td align="left">Recirculation</td>
+<td align="left">BNR</td>
+<td align="left">No RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">High</td>
+</tr>
+<tr class="even">
+<td align="left">Esbjerg W</td>
+<td align="left">Recirculation</td>
+<td align="left">BNR</td>
+<td align="left">No RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">High</td>
+</tr>
+<tr class="odd">
+<td align="left">Fornaes</td>
+<td align="left">Recirculation</td>
+<td align="left">BNR</td>
+<td align="left">No RSS</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Low</td>
+</tr>
+<tr class="even">
+<td align="left">Haderslev</td>
+<td align="left">Alternating</td>
+<td align="left">EBPR</td>
+<td align="left">RSS</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Low</td>
+</tr>
+<tr class="odd">
+<td align="left">Hirtshals</td>
+<td align="left">Alternating</td>
+<td align="left">EBPR</td>
+<td align="left">No RSS</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">High</td>
+</tr>
+<tr class="even">
+<td align="left">Hjoerring</td>
+<td align="left">Recirculation</td>
+<td align="left">EBPR</td>
+<td align="left">No RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="odd">
+<td align="left">Horsens</td>
+<td align="left">Recirculation</td>
+<td align="left">BNR</td>
+<td align="left">No RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">High</td>
+</tr>
+<tr class="even">
+<td align="left">Kerteminde</td>
+<td align="left">Recirculation</td>
+<td align="left">EBPR</td>
+<td align="left">No RSS</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="odd">
+<td align="left">Kolding</td>
+<td align="left">Alternating</td>
+<td align="left">EBPR</td>
+<td align="left">No RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="even">
+<td align="left">Lundtofte</td>
+<td align="left">Alternating</td>
+<td align="left">EBPR</td>
+<td align="left">No RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Low</td>
+</tr>
+<tr class="odd">
+<td align="left">Marselisborg</td>
+<td align="left">Alternating</td>
+<td align="left">BNR</td>
+<td align="left">No RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">High</td>
+</tr>
+<tr class="even">
+<td align="left">Middelfart</td>
+<td align="left">Recirculation</td>
+<td align="left">BNR</td>
+<td align="left">No RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="odd">
+<td align="left">Moerke</td>
+<td align="left">Alternating</td>
+<td align="left">EBPR</td>
+<td align="left">No RSS</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="even">
+<td align="left">Odense NE</td>
+<td align="left">Alternating</td>
+<td align="left">EBPR</td>
+<td align="left">No RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="odd">
+<td align="left">Odense NW</td>
+<td align="left">Alternating</td>
+<td align="left">BNR</td>
+<td align="left">No RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="even">
+<td align="left">Randers</td>
+<td align="left">Recirculation</td>
+<td align="left">EBPR</td>
+<td align="left">RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Low</td>
+</tr>
+<tr class="odd">
+<td align="left">Ribe</td>
+<td align="left">Recirculation</td>
+<td align="left">EBPR</td>
+<td align="left">RSS</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="even">
+<td align="left">Ringkoebing</td>
+<td align="left">Alternating</td>
+<td align="left">EBPR</td>
+<td align="left">RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="odd">
+<td align="left">Skive</td>
+<td align="left">Recirculation</td>
+<td align="left">EBPR</td>
+<td align="left">RSS</td>
+<td align="left">No</td>
+<td align="left">No</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="even">
+<td align="left">Soeholt</td>
+<td align="left">Alternating</td>
+<td align="left">EBPR</td>
+<td align="left">RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">High</td>
+</tr>
+<tr class="odd">
+<td align="left">Viborg</td>
+<td align="left">Recirculation</td>
+<td align="left">EBPR</td>
+<td align="left">RSS</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+<td align="left">Avg.</td>
+</tr>
+<tr class="even">
+<td align="left">Viby</td>
+<td align="left">Recirculation</td>
+<td align="left">EBPR</td>
+<td align="left">RSS</td>
+<td align="left">No</td>
+<td align="left">Yes</td>
+<td align="left">Low</td>
+</tr>
+</tbody>
+</table>
+<!--This first appendix includes all of the R chunks of code that were hidden throughout the document (using the `include = FALSE` chunk tag) to help with readibility and/or setup.-->
+<!--
+
+```r
+# This chunk ensures that the thesisdown package is
+# installed and loaded. This thesisdown package includes
+# the template files for the thesis.
+if(!require(devtools))
+  install.packages("devtools", repos = "http://cran.rstudio.com")
+if(!require(thesisdown))
+  devtools::install_github("ismayc/thesisdown")
+library(thesisdown)
+source("http://bioconductor.org/biocLite.R")
+```
+
+```
+Bioconductor version 3.4 (BiocInstaller 1.24.0), ?biocLite for help
+```
+
+```r
+if(!require(ampvis)) {
+  biocLite("Biostrings")
+  biocLite("DESeq2")
+  #biocLite("phyloseq")
+  devtools::install_github("knaldhat/ampvis")
+}
+library(ampvis)
+library(tidyverse)
+source_url("https://raw.githubusercontent.com/KasperSkytte/ord_mep/master/ord_mep.R")
+```
+
+```
+SHA-1 hash of file is d2320db45daa9621b76339b2173e76673185cc5c
+```
+
+```r
+if(!require(FactoMineR))
+  install.packages("FactoMineR")
+
+#devtools::install_github("kassambara/factoextra")
+library("FactoMineR")
+library("factoextra")
+library("ape")
+library("plotly")
+library("knitr")
+```
+-->
+
+<!--
+The bib chunk below must go last in this document according to how R Markdown renders.  More info is at http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
+-->
+<p></p>
+<!-- 
+If you'd like to change the name of the bibliography to something else,
+delete "References" and replace it.
+-->
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="8-conclusion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"], ["thesis.docx", "Word"]],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

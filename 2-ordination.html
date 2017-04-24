@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Enterotyping Danish Wastewater Treatment Plants</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="Enterotyping Danish Wastewater Treatment Plants">
+  <meta name="generator" content="bookdown 0.3 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Enterotyping Danish Wastewater Treatment Plants" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Enterotyping Danish Wastewater Treatment Plants" />
+  
+  
+  
+
+<meta name="author" content="Kasper Skytte Andersen">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="1-introduction.html">
+<link rel="next" href="3-aims.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./"></a></li>
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="1-introduction.html"><a href="1-introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="1-introduction.html"><a href="1-introduction.html#wastewater-treatment"><i class="fa fa-check"></i><b>1.1</b> Wastewater treatment</a></li>
+<li class="chapter" data-level="1.2" data-path="1-introduction.html"><a href="1-introduction.html#s-amplicon-sequencing"><i class="fa fa-check"></i><b>1.2</b> 16S amplicon sequencing</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="2-ordination.html"><a href="2-ordination.html"><i class="fa fa-check"></i><b>2</b> Ordination in Microbial Ecology</a><ul>
+<li class="chapter" data-level="2.1" data-path="2-ordination.html"><a href="2-ordination.html#exploratoryvsexplanatory"><i class="fa fa-check"></i><b>2.1</b> Exploratory vs. Explanatory</a></li>
+<li class="chapter" data-level="2.2" data-path="2-ordination.html"><a href="2-ordination.html#nichedoublezero"><i class="fa fa-check"></i><b>2.2</b> Niche theory and the double-zero problem</a></li>
+<li class="chapter" data-level="2.3" data-path="2-ordination.html"><a href="2-ordination.html#distance-based-ordination"><i class="fa fa-check"></i><b>2.3</b> Distance-based ordination</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="2-ordination.html"><a href="2-ordination.html#principal-coordinates-analysis"><i class="fa fa-check"></i><b>2.3.1</b> Principal Coordinates Analysis</a></li>
+<li class="chapter" data-level="2.3.2" data-path="2-ordination.html"><a href="2-ordination.html#non-metric-multidimensional-scaling"><i class="fa fa-check"></i><b>2.3.2</b> non-Metric Multidimensional Scaling</a></li>
+<li class="chapter" data-level="2.3.3" data-path="2-ordination.html"><a href="2-ordination.html#metrics"><i class="fa fa-check"></i><b>2.3.3</b> Distance- and (dis)similarity metrics</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="2-ordination.html"><a href="2-ordination.html#eigenanalysis-based-ordination"><i class="fa fa-check"></i><b>2.4</b> Eigenanalysis-based ordination</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="2-ordination.html"><a href="2-ordination.html#principal-components-analysis"><i class="fa fa-check"></i><b>2.4.1</b> Principal Components Analysis</a></li>
+<li class="chapter" data-level="2.4.2" data-path="2-ordination.html"><a href="2-ordination.html#redundancy-analysis"><i class="fa fa-check"></i><b>2.4.2</b> Redundancy Analysis</a></li>
+<li class="chapter" data-level="2.4.3" data-path="2-ordination.html"><a href="2-ordination.html#correspondence-analysis"><i class="fa fa-check"></i><b>2.4.3</b> Correspondence Analysis</a></li>
+<li class="chapter" data-level="2.4.4" data-path="2-ordination.html"><a href="2-ordination.html#CCA"><i class="fa fa-check"></i><b>2.4.4</b> Canonical Correspondence Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="2-ordination.html"><a href="2-ordination.html#transformation"><i class="fa fa-check"></i><b>2.5</b> Data transformation</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="3-aims.html"><a href="3-aims.html"><i class="fa fa-check"></i><b>3</b> Aims</a></li>
+<li class="chapter" data-level="4" data-path="4-mm.html"><a href="4-mm.html"><i class="fa fa-check"></i><b>4</b> Materials and Methods</a><ul>
+<li class="chapter" data-level="4.1" data-path="4-mm.html"><a href="4-mm.html#sampling"><i class="fa fa-check"></i><b>4.1</b> Sampling</a></li>
+<li class="chapter" data-level="4.2" data-path="4-mm.html"><a href="4-mm.html#library-preparation"><i class="fa fa-check"></i><b>4.2</b> Library preparation</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="4-mm.html"><a href="4-mm.html#polymerase-chain-reaction"><i class="fa fa-check"></i><b>4.2.1</b> Polymerase Chain Reaction</a></li>
+<li class="chapter" data-level="4.2.2" data-path="4-mm.html"><a href="4-mm.html#library-pool-cleanup"><i class="fa fa-check"></i><b>4.2.2</b> Library pool cleanup</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="4-mm.html"><a href="4-mm.html#dna-sequencing-and-bioinformatics"><i class="fa fa-check"></i><b>4.3</b> DNA sequencing and bioinformatics</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="4-mm.html"><a href="4-mm.html#filtering"><i class="fa fa-check"></i><b>4.3.1</b> Filtering</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="4-mm.html"><a href="4-mm.html#data-visualisation"><i class="fa fa-check"></i><b>4.4</b> Data visualisation</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="5-results1.html"><a href="5-results1.html"><i class="fa fa-check"></i><b>5</b> Results Part 1: Exploring</a><ul>
+<li class="chapter" data-level="5.1" data-path="5-results1.html"><a href="5-results1.html#how-does-the-microbial-community-composition-describe-the-wastewater-treatment-plants"><i class="fa fa-check"></i><b>5.1</b> How does the microbial community composition describe the wastewater treatment plants?</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="6-results-part-2-explaining.html"><a href="6-results-part-2-explaining.html"><i class="fa fa-check"></i><b>6</b> Results Part 2: Explaining</a><ul>
+<li class="chapter" data-level="6.1" data-path="6-results-part-2-explaining.html"><a href="6-results-part-2-explaining.html#the-effect-of-plant-design-on-the-microbial-community-composition"><i class="fa fa-check"></i><b>6.1</b> The effect of plant design on the microbial community composition</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="6-results-part-2-explaining.html"><a href="6-results-part-2-explaining.html#configuration"><i class="fa fa-check"></i><b>6.1.1</b> Configuration</a></li>
+<li class="chapter" data-level="6.1.2" data-path="6-results-part-2-explaining.html"><a href="6-results-part-2-explaining.html#enhanced-biological-phosphorus-removal-ebpr-vs-biological-nutrient-removal-bnr"><i class="fa fa-check"></i><b>6.1.2</b> Enhanced Biological Phosphorus Removal (EBPR) vs Biological Nutrient Removal (BNR)</a></li>
+<li class="chapter" data-level="6.1.3" data-path="6-results-part-2-explaining.html"><a href="6-results-part-2-explaining.html#the-effect-of-primary-setling"><i class="fa fa-check"></i><b>6.1.3</b> The effect of primary setling</a></li>
+<li class="chapter" data-level="6.1.4" data-path="6-results-part-2-explaining.html"><a href="6-results-part-2-explaining.html#the-effect-of-industral-inflow-water"><i class="fa fa-check"></i><b>6.1.4</b> The effect of industral inflow water</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="6-results-part-2-explaining.html"><a href="6-results-part-2-explaining.html#plant-stability-over-time"><i class="fa fa-check"></i><b>6.2</b> Plant stability over time</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="7-discussion.html"><a href="7-discussion.html"><i class="fa fa-check"></i><b>7</b> Discussion</a></li>
+<li class="chapter" data-level="8" data-path="8-conclusion.html"><a href="8-conclusion.html"><i class="fa fa-check"></i><b>8</b> Conclusion</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="A-characteristics-of-the-wwtps.html"><a href="A-characteristics-of-the-wwtps.html"><i class="fa fa-check"></i><b>A</b> Characteristics of the WWTPs</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Enterotyping Danish Wastewater Treatment Plants</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ordination" class="section level1">
+<h1><span class="header-section-number">2</span> Ordination in Microbial Ecology</h1>
+<p>To visualise very large and complex multidimensional data as obtained with next-generation sequencing of sometimes hundreds of samples each containing hundreds of different microorganisms, perhaps the most suited method is ordination. In essence, ordination seeks to reduce the dimensionality of a contingency table into a few, usually 1-3, more important dimensions (hence it is also termed dimensionality reduction techniques) to ease interpretation which makes it perfectly suited for complex ecological data. Through ‘dimensional yoga’ one obtains <span class="math inline">\(n-1\)</span> new dimensions, where <span class="math inline">\(n\)</span> is the total number of objects, or samples in the case of ecology, each containing a part of the total inertia in the data, whether it be (co)variance, (dis)simililarity, distance, correlation or any other statistical property. The first axis will then display the most inertia, the second axis the second most, the third axis the third most etc, and plotting the first, usually two, axes can then reveal interesting patterns between the samples, simply by interpreting the distances between the points.</p>
+<p>It can be difficult for the human mind to grasp more than 3 dimensions, because this is something that only exists in math, and the complex math behind the scenes lies beyond the scope of this report. However, there are various different types of ordination, each suited for a particular purpose and understanding the key differences between them, which to use when, and why is important. The most commonly used ordination methods in microbial ecology will be described below.<span class="citation">(P. Legendre &amp; Legendre, 2012)</span></p>
+<div id="exploratoryvsexplanatory" class="section level2">
+<h2><span class="header-section-number">2.1</span> Exploratory vs. Explanatory</h2>
+<p>The most commonly used ordination methods can generally be divided into two groups based on their purpose. The first group is the <em>exploratory</em> analyses, also known as <em>unconstrained</em> or <em>indirect gradient</em> analyses, which are suited for identifying global patterns between the objects (samples) based on the distribution or (dis)similarity of the values of multiple variables (species abundances) associated with them. The exploratory analyses do not take environmental variables (fx sample location, pH, temperature, nutrient concentrations etc, both qualitative or quantitative) into account and thus do not explain the revealed patterns directly. However it is still possible to color or shape the points by known environmental variables (see Figure <a href="2-ordination.html#fig:examplePCA">2.1</a>), but the scores (coordinates) on the ordination axes remain the same. The most commonly used exploratory methods in microbial ecology are Principal Components Analysis (PCA), <em>non-Metric</em> Multidimensional Scaling (nMDS), Principal Coordinates Analysis (PCoA/<em>metric</em> MDS) and Correspondence Analysis (CA).<span class="citation">(Ramette, 2007)</span></p>
+<div class="figure" style="text-align: center"><span id="fig:examplePCA"></span>
+<img src="figure/examplePCA.pdf" alt="A minimal example of exploratory data analysis using Principal Components Analysis. 8 samples from two wastewater treatment plants, Aalborg East and Aalborg West have been analysed and the points have been shaped by when the samples were taken in 2012. " width="350px" />
+<p class="caption">
+Figure 2.1: A minimal example of exploratory data analysis using Principal Components Analysis. 8 samples from two wastewater treatment plants, Aalborg East and Aalborg West have been analysed and the points have been shaped by when the samples were taken in 2012.
+</p>
+</div>
+<p>The second group is the <em>explanatory</em> analyses, also known as <em>canonical</em>, <em>constrained</em> or <em>direct gradient</em> analyses, which show only the variation in the data that can be explained by <em>known</em> environmental variables and not all the variation in the data as with unconstrained analysis. The response variables (species abundances) are thus concidered to be the result of gradients along the environmental variables, or a combination of them. These gradients are called environmental gradients and the constrained ordination methods mainly differ in how they mathematically hypothesise the distribution of the response variables along the environmental gradient(s) to be, either linear or unimodal. Currently the two main constrained ordination methods used in microbial ecology are Redundancy Analysis (RDA) and Canonical Correspondence Analysis (CCA), which are concidered extensions of Principal Component Analysis (PCA) and Correspondence Analysis (CA), respectively. RDA (and PCA for unconstrained analysis) is the optimal choice for purely linear distributions along the, preferably short, environmental gradient(s). CCA (and CA for unconstrained analysis) is the optimal choice for unimodal distributions along longer gradients where many double-zeros occur (more about double-zeros in Chapter <a href="2-ordination.html#nichedoublezero">2.2</a>), but in most cases CCA also performs well with short and linear gradients, it will just show a more qualitative representation of the samples <span class="citation">(Braak &amp; Prentice, 1988)</span>. Both RDA and CCA are eigenanalyses and calculate their constrained/canonical axes by introducing a linear combination of the response variables and the environmental variables as an additional step in the procedure. Otherwise the procedure is identical to that of PCA (when performing RDA) or CA (when performing CCA).<span class="citation">(Braak &amp; Prentice, 1988; P. Legendre &amp; Legendre, 2012)</span></p>
+<table>
+<caption><span id="tab:ordinationmethods">Table 2.1: </span> A classification of the most used ordination methods in microbial ecology. Based on <span class="citation">(Braak &amp; Prentice, 1988; Ramette, 2007)</span></caption>
+<thead>
+<tr class="header">
+<th><strong>Unconstrained analyses</strong></th>
+<th><strong>Constrained analyses</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><em>Eigenanalysis-based</em></strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Principal Components Analysis (<strong>PCA</strong>)</td>
+<td>Redundancy Analysis (<strong>RDA</strong>)</td>
+</tr>
+<tr class="odd">
+<td>Correspondence Analysis (<strong>CA</strong>)</td>
+<td>Canonical Correspondence Analysis (<strong>CCA</strong>)</td>
+</tr>
+<tr class="even">
+<td><strong><em>Distance-based</em></strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>non-metric Multidimensional Scaling (<strong>nMDS</strong>)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Principal Coordinates Analysis (<strong>mMDS</strong>/<strong>PCoA</strong>)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!--
+An example of a linear distribution could be when the species abundances are proportional to the concentration of a present carbon source, where simply a higher concentration means a higher abundance assuming no toxicological effects at higher concentrations. A classical example of a unimodal distribution (gaussian bell shaped) could be when the species abundances are observed at different temperatures. Most species have an optimal temperature range and their abundances will be lower both below and above this temperature. 
+-->
+</div>
+<div id="nichedoublezero" class="section level2">
+<h2><span class="header-section-number">2.2</span> Niche theory and the double-zero problem</h2>
+<p>In reality there are often many, known or unknown, environmental variables affecting the presence of species and the gradient is then concidered a complex environmental gradient. As niche theory states, species have ecological preferences and are present under a set of optimal environmental conditions, including the presence of other species <span class="citation">(Hutchinson, 1957)</span>. The theory also predicts that species have unimodal distributions along environmental gradients, illustrated in Figure <a href="2-ordination.html#fig:EVgradient">2.2</a>, so that they are found in greater abundances at some intervals along the major environmental gradients and gradually less present away from that optimal set of thriving conditions, ultimately absent <span class="citation">(Whittaker, 1967)</span>. This has the consequence that community composition data typically contain many zeros, which can pose a problem for some ordination methods, specifically those using a Euclidean distances like PCA and RDA.<span class="citation">(P. Legendre &amp; Legendre, 2012)</span></p>
+<div class="figure" style="text-align: center"><span id="fig:EVgradient"></span>
+<img src="figure/complexgradient.png" alt="Species response (or abundance-) curves in most cases show a unimodal distribution along an environmental gradient. Adapted from (Whittaker, 1967)" width="300px" />
+<p class="caption">
+Figure 2.2: Species response (or abundance-) curves in most cases show a unimodal distribution along an environmental gradient. Adapted from (Whittaker, 1967)
+</p>
+</div>
+<p>The goal of using ordination is often to represent patterns or differences between samples based on species abundances to draw ecologically meaningful conclusions about the sampling site(s) and their corresponding <span class="math inline">\(\beta\)</span>- or <span class="math inline">\(\gamma\)</span>-diversity. The species abundances are concidered to be response variables in the sense that they are indicators of their nearby environment. Variation in the environment is expected to be reflected in the relative productivities or abundances of the species <span class="citation">(Whittaker, 1972)</span>. If a species is present at two sites, this means that the sites share conditions that are favorable for the species, indicating a similarity between the sites. On the contrary, if a species is present at one site and not the other, this indicates that the ecological conditions at the sites most likely are dissimilar. However, if a species is absent from both sites, it provides no valuable ecological information since both sites either have ecological conditions outside the niche of the species, and these conditions may be very similar or very different, or the niche has been occupied by another species prefering the same conditions. Including double zeros in the comparison of sites thus results in a higher similarity between the sites than there is ecologically, and this phenomena is called the <em>double-zero problem</em>. It is therefore important to concider whether there is relevant ecological information in double-zeros in the particular study, but in most cases it is preferable not to conclude anything ecologically about them and avoid including them in the analysis. This is called asymmetric analysis as double presences are treated differently than double absences and is done in practice when the distance coefficients between sites are computed, either implicitly or explicitly during ordination. Choosing the correct ordination method and, for some, also a distance metric therefore depends on whether this information is meaningful for the study. If linear ordination methods like Principal Components Analysis or Redundancy Analysis is used, then they should first be subjected to appropriate data transformation (more on transformation in Chapter <a href="2-ordination.html#transformation">2.5</a>) or manual curation of the data to correct for the problem and reflect the ecological differences more correctly.<span class="citation">(P. Legendre &amp; Legendre, 2012)</span></p>
+</div>
+<div id="distance-based-ordination" class="section level2">
+<h2><span class="header-section-number">2.3</span> Distance-based ordination</h2>
+<p>Fundamental to any ordination method is not only dimensional reduction, but more importantly also how it does so and how it displays and calculates distances between objects (sites) or variables (species). As stated in Table <a href="2-ordination.html#tab:ordinationmethods">2.1</a>, ordination methods can be classified by whether they are distance-based or not, however they could just as well have been classified by whether they use a metric explicitly or implicitly to calculate distances, respectively <span class="citation">(P. Legendre &amp; Legendre, 2012)</span>. As such, eigenanalysis-based ordination methods use a metric of their own as part of their algorithm, while distance-based ordination can only be performed on a distance- or (dis)similarity matrix, which has to be calculated first using one of many distance- or (dis)similarity metrics. When calculated, a symmetrical matrix is then obtained containing <em>distance coefficients</em>, or more generally <em>association coefficients</em>, between all pairs of sites. This gives the ecologist flexibility as to how it would be ecologically meaningful to represent the differences between sites or species, however it also implies the importance of knowing how to interpret the results based on the particular metric and choosing it wisely (more on metrics in Chapter <a href="2-ordination.html#metrics">2.3.3</a>).</p>
+<p>Currently the most used distance-based ordination methods are non-Metric Multidimensional Scaling (nMDS) and Principal Coordinates Analysis (PCoA), also called <em>metric</em> Multidimensional Scaling (mMDS). There is also Polar Ordination, however it is rarely used and will not be detailed in the following.<span class="citation">(Ramette, 2007)</span></p>
+<div id="principal-coordinates-analysis" class="section level3">
+<h3><span class="header-section-number">2.3.1</span> Principal Coordinates Analysis</h3>
+<p>Principal Coordinates Analysis (PCoA) is very useful at exploring microbial ecology data because it can represent relationships between samples measured by any distance coefficient in Euclidean space (also called metric space, fx a Cartesian coordinate system). Therefore PCoA is also called <em>metric</em> Multidimensional Scaling, because it can represent the <em>metric</em> properties of the distance- or (dis)similarity matrix. When the distance metric is Euclidean, the results obtained by PCoA is identical to that of PCA.</p>
+<p>Since the choice of metric directly influences the result, it has to be done with care. However, this is also one of the advantages of using PCoA because it is then possible to better deal with ecological problems like the <em>double-zero problem</em> while still using Euclidean mapping. The choice of metric also influences how the results are to be interpreted, as the original data is then a function of the chosen metric, which may be non-Euclidean, and does not always allow for a true representation in Euclidean space. Furthermore, it is possible to obtain negative eigenvalues of the resulting axes, especially when a semi-metric is used, and this should be corrected for if they occur on the main axes (ie the axes being plotted). The eigenvalue of an axis is an indication of its contribution of inertia to the total inertia in the data, which is therefore also obscured by the choice of metric and its value should not be directly refered to when performing PCoA. PCoA is partly based on eigenanalysis, however it is more appropriate to classify it as a distance-based analysis since it is highly dependent on the chosen distance metric.<span class="citation">(Ramette, 2007)</span></p>
+</div>
+<div id="non-metric-multidimensional-scaling" class="section level3">
+<h3><span class="header-section-number">2.3.2</span> non-Metric Multidimensional Scaling</h3>
+<p>Non-Metric Multidimensional Scaling (nMDS) is similar to PCoA in that it is also performed on a distance- or (dis)similarity matrix calculated using a specific metric. However, nMDS is different from PCoA on numerous aspects. PCA aswell as PCoA both try to maximise a linear correlation (of course dependent on the metric used in the case of PCoA) of species abundances along the environmental gradient, which will often result in an artifact called <em>the horseshoe effect</em> when the response variables are the result of a non-linear or long gradient <span class="citation">(Podani &amp; Miklós, 2002)</span>. This results in an arch shaped and incorrect pattern of the points leading to false conclusions. nMDS eliminates this by only preserving the ranked order of the distance coefficients between samples. As the name suggests, this makes the procedure <em>non-metric</em>, and the distances between points is therefore not to be interpreted numerically.</p>
+<p>nMDS does not try to explain as much variation in the data as possible as with PCA or PCoA, but more the discontinuities in the data. It is a very robust technique that can handle missing values aswell as multiple data types at once. It has no distributional assumptions about the data compared to all other ordination methods, where the data is assumed to have for example linear or unimodal distributions as with PCA/RDA and CA/CCA, respectively. nMDS is therefore the ordination method of choice when the nature of the data is unknown.<span class="citation">(Buttigieg &amp; Ramette, 2014; P. Legendre &amp; Legendre, 2012)</span></p>
+<p>nMDS is furthermore very different from other ordination methods by how it is computed. nMDS is an iterative procedure where the number of dimensions is chosen <em>a priori</em> (before analysis) and the algorithm tries to find a solution from either random starting points or from the results of a PCoA on the same data provided by the user. The solution is not unique as with all other ordination methods and it is therefore recommended to run it multiple times to validate the result, preferably with different numbers of dimensions. During the algorithm, a stress value is calculated to express the goodness-of-fit of the solution and the procedure is repeated many times (20+ is not unusual) using the solution of the previous cycle as the starting point until the stress value does not change significantly and reach an acceptable, low value. A stress value is concidered good when below 0.05, while below 0.1 is acceptable. A stress value above 0.2 is suspect and the results should not be trusted. Generally choosing more dimensions will lower the stress value.<span class="citation">(Ramette, 2007)</span></p>
+<p>One of the major drawbacks of nMDS is that it is very computationally demanding. However, modern computers are getting increasingly more powerful, so this is less of a concern compared to the time during which the method was developed by the psychometricians Kruskal and Shepard at the Bell Telephone Labs in the 1960’s.<span class="citation">(Kruskal, 1964; Shepard, 1966)</span></p>
+</div>
+<div id="metrics" class="section level3">
+<h3><span class="header-section-number">2.3.3</span> Distance- and (dis)similarity metrics</h3>
+<p>As mentioned, choosing a distance- or (dis)similarity metric that makes ecological sense is crucial for the analysis and subsequent interpretation of the ordination. A distance metric is basically a mathematical function with which to calculate distances between objects or variables in the data. There are many, many ways (60+) of calculating distance/association coefficients between objects and/or variables, however only the general concepts and most important differences will be covered in the following. For in-depth knowledge of how to calculate association coefficients using all metrics, semi-metrics, non-metrics and their exact formulae, refer to Chapter 7 in <span class="citation">(P. Legendre &amp; Legendre, 2012)</span>.</p>
+<p>For association coefficients to be concidered metric, the four properties listed below have to be satisfied. When this is true, the coefficient is called a distance coefficient or a metric coefficient, since it can be fully represented in Euclidean (metric) space:</p>
+
+<div id="the-four-metric-properties" class="section level4 unnumbered">
+<h4>The four metric properties</h4>
+<ol style="list-style-type: decimal">
+<li><p>The distance between identical objects is <span class="math inline">\(0\)</span>, which is the lowest possible value:if <span class="math inline">\(a=b\)</span>, then <span class="math inline">\(D(a,b)=0\)</span></p></li>
+<li><p>When the compared objects are not identical, the coefficient, and the distance, has a positive value:if <span class="math inline">\(a\neq b\)</span>, then <span class="math inline">\(D(a,b) &gt; 0\)</span></p></li>
+<li><p>Symmetry: the distance from A to B is the same as the distance from B to A:<span class="math inline">\(D(a,b) = D(b,a)\)</span></p></li>
+<li><p>Triangle inequality: The sum of two sides of a triangle of points in Euclidean space is equal to or longer than the third side. In other words, the shortest distance between two points in Euclidean space is a straight line:<span class="math inline">\(D(a,b) + D(b,c) \geq D(a,c)\)</span></p></li>
+</ol>
+<p>When one or more of the four properties are not satisfied, in most cases the fourth property (triangle inequality), the coefficients calculated are not concidered to be distance coefficients, they are then termed semi-metric coefficients. When this is the case, distances cannot be ordinated (at least reliably) in Euclidean space and nMDS is the optimal ordination method. Therefore carefully concidering whether the chosen metric is suitable for the ordination method used is important, if not then interpretation of the result should be done with caution. When all four properties are met, both nMDS and PCoA can be used. Dissimilarity and similarity coefficients can be both metric or semi-metric. They are often just termed similarity coefficients because it is straight forward to convert dissimilarity coefficients (D) to similarity coefficients (S) and vice versa: <span class="math inline">\(S=1-D\)</span>.<span class="citation">(P. Legendre &amp; Legendre, 2012)</span></p>
+<p>LIST OF COMMON METRICS: BRAY-CURTIS, KULCZYNSKI, JACCARD, MANHATTAN/CITYBLOCK METRICS ETC</p>
+</div>
+</div>
+</div>
+<div id="eigenanalysis-based-ordination" class="section level2">
+<h2><span class="header-section-number">2.4</span> Eigenanalysis-based ordination</h2>
+<p>The eigenanalysis-based ordination methods have more specific purposes than the distance-based methods, because they are limited to represent the distances only by the capabilities of their implicit distance function (metric), where distance coefficients are not first calculated manually by the user. They all have a few things in common, however:</p>
+<ul>
+<li>There is always one unique solution to the data</li>
+<li>Each axis is an eigenvector associated with an eigenvalue expressing the axis’ contribution to the inertia in the data</li>
+<li>The axes are ranked by (and plotted by) the eigenvalues, highest to lowest</li>
+<li>The axes are orthogonal to eachother, thus uncorrelated and express their own ‘unique’ inertia <span class="citation">(P. Legendre &amp; Legendre, 2012)</span></li>
+</ul>
+<p>Normally, the two axes with the highest eigenvalues are plotted in a Cartesian coordinate system, where the highest eigenvalue axis is represented by the first axis and the second highest on the second axis. The most inertia in the data is therefore always represented by the first (x-)axis, which can, for example in the case of two distinct groups of sample points as seen with the example in Figure <a href="2-ordination.html#fig:examplePCA">2.1</a>, often be interpreted as ‘between-group variation’. The secondmost inertia is expressed by the second (y-)axis and can then be interpreted as ‘within-group variation’.</p>
+<p>It is important to examine all eigenvalues obtained for each axis to confirm that the axes being plotted are significant and represent a large portion of the inertia in the data. To do this, a simple plot called a <em>scree plot</em> can be made where all axes are plotted on the first axis ordered by eigenvalue in decreasing order and their corresponding eigenvalue on the second axis, as illustrated in Figure <a href="2-ordination.html#fig:screeplot">2.3</a>. Optimally, the first two axes represent more than half of the inertia in the data and have high values compared to the rest of the axes, where the latter should make up a slightly decreasing, straight line. The worst case scenario is when all the values make up a nearly horizontal, straight line. In this case, the ordination is either failing at representing the inertia in the data and a different ordination method may be better suited for the data or there is simply no inertia to represent at all. The sum of all eigenvalues is always equal to the total inertia in the data and the corresponding eigenvalues of the axes plotted are often shown as a percentage of the total inertia on the axis labels. Below, the remaining four ordination methods listed in <a href="2-ordination.html#tab:ordinationmethods">2.1</a> will be explained briefly.<span class="citation">(Ramette, 2007)</span></p>
+<div class="figure" style="text-align: center"><span id="fig:screeplot"></span>
+<img src="figure/screeplot.pdf" alt="A scree plot of the eigenvalues of the 7 axes obtained from the PCA ordination seen in Figure 2.1." width="300px" />
+<p class="caption">
+Figure 2.3: A scree plot of the eigenvalues of the 7 axes obtained from the PCA ordination seen in Figure 2.1.
+</p>
+</div>
+<div id="principal-components-analysis" class="section level3">
+<h3><span class="header-section-number">2.4.1</span> Principal Components Analysis</h3>
+<p>Principal Component Analysis (PCA) is the oldest ordination method and still also the most used, perhaps due to its simplicity <span class="citation">(Ramette, 2007)</span>. It has its roots all the way back to 1901 when Karl Pearson explained how to represent objects by the ‘best-fitting’ line or plane <span class="citation">(Pearson, 1901)</span>. The simplest example of dimensional reduction is the representation of 2-dimensional data in 1 dimension, which is normally called linear regression. It is simply a straight line, drawn through the <em>centroid</em> of the data, see Figure <a href="2-ordination.html#fig:pearson1901">2.4</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:pearson1901"></span>
+<img src="figure/pearson1901.png" alt="The main structure of two-dimensional data can often be described in one dimension, by positions on a straight line. Adapted from (Pearson, 1901)" width="250px" />
+<p class="caption">
+Figure 2.4: The main structure of two-dimensional data can often be described in one dimension, by positions on a straight line. Adapted from (Pearson, 1901)
+</p>
+</div>
+<p>Pearson described how this is done mathematically, which formed the concepts of how to describe the overall structure of complex data. In 1933, Harold Hotelling <span class="citation">(Hotelling, 1933)</span> applied the concepts on multidimensional data and explained how to represent the data by its <em>principal components</em>, which in turn formed the fundamental of PCA.</p>
+<p>The goal of PCA is simple: express the maximum amount of variation in the data. This is done by generating new, synthetic axes, which are synonymous to eigenvectors, where the first axis is alligned so that it represents the most inertia in the data. Inertia in the case of PCA is specifically: <em>variance</em>. PCA is therefore concidered more of a quantitative ordination method, as it excels at highlighting differences between samples based on numerical differences in species abundances and is most reliable when the same species are present in most or all of the samples. As mentioned in Chapter <a href="2-ordination.html#nichedoublezero">2.2</a>, this is rarely the case with ecological data, and the double-zero problem thus has a major impact on the results obtained by PCA, questioning its usefulnes without appropriate data transformation. Of course, this is not a problem when analysing <span class="math inline">\(\alpha\)</span>-diversities since there will be no zero-abundances.<span class="citation">(P. Legendre &amp; Legendre, 2012)</span></p>
+<p>PCA is a linear method because it represents the linear correlation or covariance of species abundances between samples using Euclidean distances. Both the sample scores (points) and species scores (arrows) are usually plotted together to form a biplot, where arrows indicate the linear gradients of species abundances and the relative right-angle projections of the samples onto the arrows then approximate their corresponding abundance of the particular species. This makes PCA suited to answer questions like for example: “How are samples different in terms of the abundances of species X and Y?”.<span class="citation">(Ramette, 2007)</span></p>
+<p>Fundamental to PCA (and Redundancy Analysis) is the Euclidean distance, which is calculated by the following formula, equivalent to the pythagorean theorem:</p>
+
+<strong>The euclidean distance</strong>
+<span class="math display">\[\begin{equation}
+  D_{Euclidean}(x_1,x_2)=\sqrt{\sum_{j=1}^p\left(y_{1j}-y_{2j}\right)^2}
+  \label{eq:eucdist}
+\end{equation}\]</span>
+<p>where <span class="math inline">\(Y=[y_{ij}]\)</span> is a species abundance table of the size <span class="math inline">\((n{\times}p)\)</span> with sites (rows) <span class="math inline">\(i=[1...n]\)</span> and species (columns) <span class="math inline">\(j=[1...p]\)</span>.<span class="citation">(P. Legendre &amp; Gallagher, 2001)</span></p>
+</div>
+<div id="redundancy-analysis" class="section level3">
+<h3><span class="header-section-number">2.4.2</span> Redundancy Analysis</h3>
+<p>To answer a question like: “How do species abundances correlate with a measured carbon source concentration?”, PCA would be insufficient. To answer that question, Redundancy Analysis (RDA) is the perfect choice. RDA is concidered an extension of PCA, or the constrained version of PCA, which can directly explain the observed patterns based on known environmental variables. This is done by making a linear combination of the species abundance matrix and a matrix containing information about one or several known environmental variables. These variables are then hypothesised to be able to explain a portion of the observed variance in the data and the resulting constrained axes are plotted. Just as with unconstrained ordination, the two axes with the highest eigenvalues are plotted and their contribution to the total variance in the data are usually indicated on the axis labels to give an indication of the significance of the constrained variable(s). When doing constrained analysis, both with RDA and CCA (Chapter <a href="2-ordination.html#CCA">2.4.4</a>), a plot with not only sites and species are made, but also environmental vectors are plotted together in one plot called a triplot. This is a very convenient way to visualise all three types of information at once to easily draw ecological conclusions about the sites.</p>
+<p>Because RDA is based on Euclidean distances just like PCA, it is only suited for the analysis of short, linear environmental gradients with few or no species absences, which can limit its use in ecology.<span class="citation">(Ramette, 2007)</span></p>
+</div>
+<div id="correspondence-analysis" class="section level3">
+<h3><span class="header-section-number">2.4.3</span> Correspondence Analysis</h3>
+<p>Perhaps the most appropriate ordination method for ecological data is Correspondence Analysis (CA) because it represents the differences between sites hypothesising a unimodal distribution, which fits the species niche theory well, as discussed in Chapter <a href="2-ordination.html#nichedoublezero">2.2</a>. As the name suggests, CA tries to represent the <em>correspondence</em> between samples and species by testing how “this species correspond to that site”. CA is thus concidered more of a qualitative representation of the data and is based on the Pearson chi-squared statistic of the form <span class="math inline">\(\chi^2 = \sum\frac{(observed-expected)^2}{expected}\)</span>.</p>
+<p>CA is developed by several authors independently and has several different names, for example <em>contingency table analysis</em>, <em>reciprocal averaging</em>, <em>weighted averaging</em>, <em>dual scaling</em> or <em>homogeneity analysis</em>. Fundamentally, CA calculates the weighted averages of the sample scores as defined by the <span class="math inline">\(\chi^2\)</span>-metric described below, where the weights are, with community composition data, specifically species abundances. This means that species abundances to some degree contribute to the calculated distances, however they are also calculated relative to the average abundances and therefore does not influence the results as much as with the Euclidean-based ordination methods. This has the consequence that low abundant species may have an unduly high influence on the results, because the abundances of common species contribute less to the calculated distance compared to low abundant species, which are often numerous. With CA, and CCA, it is therefore important to concider the importance of low abundant species in the particular study and give less weight if needed <span class="citation">(Braak &amp; Prentice, 1988; P. Legendre &amp; Gallagher, 2001)</span>.</p>
+<p>guldkorn:</p>
+<p>awesome for <span class="math inline">\(\beta\)</span>-diversity</p>
+<p>during the procedure, the result is matched with a random solution and a P-value can be extracted to reject the NULL-hypothesis of no association</p>
+<p>a site with more species than another will have higher chi-squared distances</p>
+<ul>
+<li><p>low abundances has an unduly high influence, use transformation</p></li>
+<li><p>eigenvalues are correlation coefficients between samples and species</p></li>
+</ul>
+<p><em>Total inertia</em> The total inertia of a CA solution conveys the degree to which the values of rows and columns correspond to each other. More specifically, it reflects the degree to which rows and columns deviate from the null hypothesis of “no association”, according to the logic of the Pearson’s <span class="math inline">\(\chi^2\)</span> statistic.</p>
+<ul>
+<li>Eigenvalues in CA are not equivalent to those of PCA and should not be interpreted in terms of “variation” but “inertia”.</li>
+</ul>
+<strong>The chi-squared distance</strong>
+<span class="math display">\[\begin{equation}
+  D_{\chi^2}(x_1,x_2)=\sqrt{y_{++}}\sqrt{\sum_{j=1}^p\frac{1}{y_{+j}}\left(\frac{y_{1j}}{y_{1+}}-\frac{y_{2j}}{y_{2+}}\right)^2}
+  \label{eq:chidist}
+\end{equation}\]</span>
+<p>where <span class="math inline">\(Y=[y_{ij}]\)</span> is a species abundance table of the size <span class="math inline">\((n{\times}p)\)</span> with sites (rows) <span class="math inline">\(i=[1...n]\)</span> and species (columns) <span class="math inline">\(j=[1...p]\)</span>, with row sums <span class="math inline">\(y_{i+}\)</span>, column sums <span class="math inline">\(y_{+j}\)</span> and total sum <span class="math inline">\(y_{++}\)</span>.<span class="citation">(P. Legendre &amp; Gallagher, 2001)</span></p>
+</div>
+<div id="CCA" class="section level3">
+<h3><span class="header-section-number">2.4.4</span> Canonical Correspondence Analysis</h3>
+<p>Constrained version of CA</p>
+<div class="figure" style="text-align: center"><span id="fig:unconstrainedordination"></span>
+<img src="figure/ordinationfigure.pdf" alt="Principles of unconstrained analyses" width="500px" />
+<p class="caption">
+Figure 2.5: Principles of unconstrained analyses
+</p>
+</div>
+</div>
+</div>
+<div id="transformation" class="section level2">
+<h2><span class="header-section-number">2.5</span> Data transformation</h2>
+<p>Important, weighting low/high abundant species</p>
+<span class="math display">\[\begin{equation}
+  D_{Hellinger}(x_1,x_2)=
+  \sqrt{
+  \sum_{j=1}^p
+  \left(
+  \sqrt{\frac{y_{1j}}{y_{+j}}}-
+  \sqrt{\frac{y_{2j}}{y_{2+}}}
+  \right)^2
+  }
+  \label{eq:hellinger}
+\end{equation}\]</span>
+<p><span class="citation">(P. Legendre &amp; Gallagher, 2001)</span></p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="1-introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="3-aims.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"], ["thesis.docx", "Word"]],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
