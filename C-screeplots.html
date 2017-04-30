@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="C-screeplots.html">
-
+<link rel="prev" href="B-supplementaryplots.html">
+<link rel="next" href="references.html">
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -142,60 +142,73 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="references" class="section level1 unnumbered">
-<h1>References</h1>
-<!--
-To remove the indentation of the first entry.
--->
+<div id="screeplots" class="section level1">
+<h1><span class="header-section-number">C</span> Scree plots</h1>
+<p>Scree plots for all plots in the two results chapters are shown here.</p>
+<div id="scree-plot-of-figure-reffigoverviewpca" class="section level2">
+<h2><span class="header-section-number">C.1</span> Scree plot of Figure <a href="5-results1.html#fig:overviewPCA">5.1</a></h2>
+<p><img src="thesis_files/figure-html/SP_overviewPCA-1.png" width="480" style="display: block; margin: auto;" /></p>
 <p></p>
+</div>
+<div id="scree-plot-of-figure-reffigoverviewpcoabray" class="section level2">
+<h2><span class="header-section-number">C.2</span> Scree plot of Figure <a href="5-results1.html#fig:overviewPCoAbray">5.2</a></h2>
+<p><img src="thesis_files/figure-html/SP_overviewPCoAbray-1.png" width="480" style="display: block; margin: auto;" /></p>
+<!--This first appendix includes all of the R chunks of code that were hidden throughout the document (using the `include = FALSE` chunk tag) to help with readibility and/or setup.-->
 <!--
-To create a hanging indent and spacing between entries.  These three lines may need to be removed for styles that don't require the hanging indent.
--->
-<p>  </p>
-<!--
-This is just for testing with more citations for the bibliography at the end.  Add other entries into the list here if you'd like them to appear in the bibliography even if they weren't explicitly cited in the document.
+
+```r
+# This chunk ensures that the thesisdown package is
+# installed and loaded. This thesisdown package includes
+# the template files for the thesis.
+if(!require(devtools))
+  install.packages("devtools", repos = "http://cran.rstudio.com")
+if(!require(thesisdown))
+  devtools::install_github("ismayc/thesisdown")
+library(thesisdown)
+source("http://bioconductor.org/biocLite.R")
+```
+
+```
+Bioconductor version 3.4 (BiocInstaller 1.24.0), ?biocLite for help
+```
+
+```
+A new version of Bioconductor is available after installing the most
+  recent version of R; see http://bioconductor.org/install
+```
+
+```r
+if(!require(ampvis)) {
+  biocLite("Biostrings")
+  biocLite("DESeq2")
+  #biocLite("phyloseq")
+  devtools::install_github("knaldhat/ampvis")
+}
+library(ampvis)
+library(tidyverse)
+#devtools::source_url("https://raw.githubusercontent.com/KasperSkytte/ord_mep/master/ord_mep.R")
+source("/Users/kapper/Documents/github/R/ord_mep/ord_mep.R")
+source("../ord_mep_plotly.R")
+if(!require(FactoMineR))
+  install.packages("FactoMineR")
+
+#devtools::install_github("kassambara/factoextra")
+library("FactoMineR")
+library("factoextra")
+library("ape")
+library("plotly")
+library("knitr")
+```
 -->
 
-<div id="refs" class="references">
-<div>
-<p>Braak, C. J. F. ter, &amp; Prentice, I. C. (1988). A Theory of Gradient Analysis. <em>Advances in Ecological Research</em>, <em>18</em>(C), 271–317. <a href="http://doi.org/10.1016/S0065-2504(08)60183-X" class="uri">http://doi.org/10.1016/S0065-2504(08)60183-X</a></p>
-</div>
-<div>
-<p>Buttigieg, P. L., &amp; Ramette, A. (2014). A guide to statistical analysis in microbial ecology: A community-focused, living review of multivariate data analyses. <em>FEMS Microbiology Ecology</em>, <em>90</em>(3), 543–550. <a href="http://doi.org/10.1111/1574-6941.12437" class="uri">http://doi.org/10.1111/1574-6941.12437</a></p>
-</div>
-<div>
-<p>Hotelling, H. (1933). Analysis of a complex of statistical variables into principal components. <em>Journal of Educational Psychology</em>, <em>24</em>(6), 417–441. <a href="http://doi.org/10.1037/h0071325" class="uri">http://doi.org/10.1037/h0071325</a></p>
-</div>
-<div>
-<p>Hutchinson, G. E. (1957). Concluding remarks. <em>Cold Spring Harbor Symposia on Quantitative Biology</em>, <em>22</em>, 415–427. <a href="http://doi.org/10.1101/SQB.1957.022.01.039" class="uri">http://doi.org/10.1101/SQB.1957.022.01.039</a></p>
-</div>
-<div>
-<p>Kruskal, J. B. (1964). Multidimensional scaling by optimizing goodness of fit to a nonmetric hypothesis. <em>Psychometrika</em>, <em>29</em>(1), 1–27. <a href="http://doi.org/10.1007/BF02289565" class="uri">http://doi.org/10.1007/BF02289565</a></p>
-</div>
-<div>
-<p>Legendre, P., &amp; Gallagher, E. (2001). Ecologically meaningful transformations for ordination of species data. <em>Oecologia</em>, <em>129</em>(2), 271–280. <a href="http://doi.org/10.1007/s004420100716" class="uri">http://doi.org/10.1007/s004420100716</a></p>
-</div>
-<div>
-<p>Legendre, P., &amp; Legendre, L. (2012). <em>Numerical Ecology</em>. Elsevier Science. Retrieved from <a href="https://books.google.dk/books?id=6ZBOA-iDviQC" class="uri">https://books.google.dk/books?id=6ZBOA-iDviQC</a></p>
-</div>
-<div>
-<p>Pearson, K. (1901). On lines and planes of closest fit to systems of points in space. <em>The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science</em>, <em>2</em>(1), 559–572. <a href="http://doi.org/10.1080/14786440109462720" class="uri">http://doi.org/10.1080/14786440109462720</a></p>
-</div>
-<div>
-<p>Podani, J., &amp; Miklós, I. (2002). Resemblance Coefficients and the Horseshoe Effect in Principal Coordinates Analysis. <em>Ecology</em>, <em>83</em>(12), 3331–3343. Retrieved from <a href="http://www.jstor.org/stable/3072083" class="uri">http://www.jstor.org/stable/3072083</a></p>
-</div>
-<div>
-<p>Ramette, A. (2007). Multivariate analyses in microbial ecology. <em>FEMS Microbiology Ecology</em>, <em>62</em>(2), 142–60. <a href="http://doi.org/10.1111/j.1574-6941.2007.00375.x" class="uri">http://doi.org/10.1111/j.1574-6941.2007.00375.x</a></p>
-</div>
-<div>
-<p>Shepard, R. N. (1966). Metric structures in ordinal data. <em>Journal of Mathematical Psychology</em>, <em>3</em>(2), 287–315. <a href="http://doi.org/10.1016/0022-2496(66)90017-4" class="uri">http://doi.org/10.1016/0022-2496(66)90017-4</a></p>
-</div>
-<div>
-<p>Whittaker, R. H. (1967). Gradient Analysis of Vegetation*. <em>Biological Reviews</em>, <em>42</em>(2), 207–264. <a href="http://doi.org/10.1111/j.1469-185X.1967.tb01419.x" class="uri">http://doi.org/10.1111/j.1469-185X.1967.tb01419.x</a></p>
-</div>
-<div>
-<p>Whittaker, R. H. (1972). Evolution and Measurement of Species Diversity. <em>Taxon</em>, <em>21</em>(2/3), 213–251. Retrieved from <a href="http://www.jstor.org/stable/1218190" class="uri">http://www.jstor.org/stable/1218190</a></p>
-</div>
+<!--
+The bib chunk below must go last in this document according to how R Markdown renders.  More info is at http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
+-->
+<p></p>
+<!-- 
+If you'd like to change the name of the bibliography to something else,
+delete "References" and replace it.
+-->
 </div>
 </div>
             </section>
@@ -203,8 +216,8 @@ This is just for testing with more citations for the bibliography at the end.  A
           </div>
         </div>
       </div>
-<a href="C-screeplots.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="B-supplementaryplots.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
 
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
