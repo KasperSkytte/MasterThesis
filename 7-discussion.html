@@ -6,9 +6,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Enterotyping Danish Wastewater Treatment Plants</title>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="Enterotyping Danish Wastewater Treatment Plants">
-  <meta name="generator" content="bookdown 0.3 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.3.19 and GitBook 2.6.7">
 
   <meta property="og:title" content="Enterotyping Danish Wastewater Treatment Plants" />
   <meta property="og:type" content="book" />
@@ -34,7 +33,6 @@
   
 <link rel="prev" href="6-results2.html">
 <link rel="next" href="8-conclusion.html">
-
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,15 +47,19 @@
 
 
 <script src="libs/htmlwidgets-0.8/htmlwidgets.js"></script>
-<link href="libs/plotlyjs-1.16.3/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotlyjs-1.16.3/plotly-latest.min.js"></script>
-<script src="libs/plotly-binding-4.5.6/plotly.js"></script>
+<link href="libs/plotlyjs-1.26.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotlyjs-1.26.1/plotly-latest.min.js"></script>
+<script src="libs/plotly-binding-4.6.0/plotly.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
 
 
 
 </head>
 
 <body>
+
 
 
   <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
@@ -102,7 +104,7 @@
 </ul></li>
 <li class="chapter" data-level="5" data-path="5-results1.html"><a href="5-results1.html"><i class="fa fa-check"></i><b>5</b> Results Part 1: Exploring the Microbial Communities</a><ul>
 <li class="chapter" data-level="5.1" data-path="5-results1.html"><a href="5-results1.html#overview-of-the-differences-between-the-wwtps"><i class="fa fa-check"></i><b>5.1</b> Overview of the differences between the WWTPs</a></li>
-<li class="chapter" data-level="5.2" data-path="5-results1.html"><a href="5-results1.html#how-does-the-microbial-community-composition-describe-the-wastewater-treatment-plants"><i class="fa fa-check"></i><b>5.2</b> How does the microbial community composition describe the wastewater treatment plants?</a></li>
+<li class="chapter" data-level="5.2" data-path="5-results1.html"><a href="5-results1.html#wwtpcommunities"><i class="fa fa-check"></i><b>5.2</b> How does the microbial community composition describe the WWTPs?</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="6-results2.html"><a href="6-results2.html"><i class="fa fa-check"></i><b>6</b> Results Part 2: Explaining</a><ul>
 <li class="chapter" data-level="6.1" data-path="6-results2.html"><a href="6-results2.html#the-effect-of-plant-design-on-the-microbial-community-composition"><i class="fa fa-check"></i><b>6.1</b> The effect of plant design on the microbial community composition</a><ul>
@@ -121,6 +123,7 @@
 <li class="chapter" data-level="C" data-path="C-screeplots.html"><a href="C-screeplots.html"><i class="fa fa-check"></i><b>C</b> Scree plots</a><ul>
 <li class="chapter" data-level="C.1" data-path="C-screeplots.html"><a href="C-screeplots.html#scree-plot-of-figure-reffigoverviewpca"><i class="fa fa-check"></i><b>C.1</b> Scree plot of Figure @ref(fig:overviewPCA)</a></li>
 <li class="chapter" data-level="C.2" data-path="C-screeplots.html"><a href="C-screeplots.html#scree-plot-of-figure-reffigoverviewpcoabray"><i class="fa fa-check"></i><b>C.2</b> Scree plot of Figure @ref(fig:overviewPCoAbray)</a></li>
+<li class="chapter" data-level="C.3" data-path="C-screeplots.html"><a href="C-screeplots.html#scree-plot-of-figure-reffigoverviewcca"><i class="fa fa-check"></i><b>C.3</b> Scree plot of Figure @ref(fig:overviewCCA)</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -149,6 +152,9 @@
 <li>nMDS bray-curtis and JSD stress value around 0.24, TERRIBLE</li>
 <li>rJSD, lower numbers because sqrt, procrustes affected</li>
 <li>hellinger DISTANCE is possible, but hasn’t been tested</li>
+<li>Movement in the water, sample position not the same</li>
+<li>subsetting ribe+esbjerg makes ejby moelle stand out in CCA, highlights that more data means smaller distances on the plot</li>
+<li>removing 2014 didn’t make a difference</li>
 </ul>
 
 </div>
@@ -158,8 +164,9 @@
         </div>
       </div>
 <a href="6-results2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="8-conclusion.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
-
+<a href="8-conclusion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
@@ -202,7 +209,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(script.src))
       script.src  = script.src.replace(/^https?:/, '');
     document.getElementsByTagName("head")[0].appendChild(script);

@@ -6,9 +6,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Enterotyping Danish Wastewater Treatment Plants</title>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="Enterotyping Danish Wastewater Treatment Plants">
-  <meta name="generator" content="bookdown 0.3 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.3.19 and GitBook 2.6.7">
 
   <meta property="og:title" content="Enterotyping Danish Wastewater Treatment Plants" />
   <meta property="og:type" content="book" />
@@ -34,7 +33,6 @@
   
 <link rel="prev" href="1-introduction.html">
 <link rel="next" href="3-aims.html">
-
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,15 +47,19 @@
 
 
 <script src="libs/htmlwidgets-0.8/htmlwidgets.js"></script>
-<link href="libs/plotlyjs-1.16.3/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotlyjs-1.16.3/plotly-latest.min.js"></script>
-<script src="libs/plotly-binding-4.5.6/plotly.js"></script>
+<link href="libs/plotlyjs-1.26.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotlyjs-1.26.1/plotly-latest.min.js"></script>
+<script src="libs/plotly-binding-4.6.0/plotly.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
 
 
 
 </head>
 
 <body>
+
 
 
   <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
@@ -102,7 +104,7 @@
 </ul></li>
 <li class="chapter" data-level="5" data-path="5-results1.html"><a href="5-results1.html"><i class="fa fa-check"></i><b>5</b> Results Part 1: Exploring the Microbial Communities</a><ul>
 <li class="chapter" data-level="5.1" data-path="5-results1.html"><a href="5-results1.html#overview-of-the-differences-between-the-wwtps"><i class="fa fa-check"></i><b>5.1</b> Overview of the differences between the WWTPs</a></li>
-<li class="chapter" data-level="5.2" data-path="5-results1.html"><a href="5-results1.html#how-does-the-microbial-community-composition-describe-the-wastewater-treatment-plants"><i class="fa fa-check"></i><b>5.2</b> How does the microbial community composition describe the wastewater treatment plants?</a></li>
+<li class="chapter" data-level="5.2" data-path="5-results1.html"><a href="5-results1.html#wwtpcommunities"><i class="fa fa-check"></i><b>5.2</b> How does the microbial community composition describe the WWTPs?</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="6-results2.html"><a href="6-results2.html"><i class="fa fa-check"></i><b>6</b> Results Part 2: Explaining</a><ul>
 <li class="chapter" data-level="6.1" data-path="6-results2.html"><a href="6-results2.html#the-effect-of-plant-design-on-the-microbial-community-composition"><i class="fa fa-check"></i><b>6.1</b> The effect of plant design on the microbial community composition</a><ul>
@@ -121,6 +123,7 @@
 <li class="chapter" data-level="C" data-path="C-screeplots.html"><a href="C-screeplots.html"><i class="fa fa-check"></i><b>C</b> Scree plots</a><ul>
 <li class="chapter" data-level="C.1" data-path="C-screeplots.html"><a href="C-screeplots.html#scree-plot-of-figure-reffigoverviewpca"><i class="fa fa-check"></i><b>C.1</b> Scree plot of Figure @ref(fig:overviewPCA)</a></li>
 <li class="chapter" data-level="C.2" data-path="C-screeplots.html"><a href="C-screeplots.html#scree-plot-of-figure-reffigoverviewpcoabray"><i class="fa fa-check"></i><b>C.2</b> Scree plot of Figure @ref(fig:overviewPCoAbray)</a></li>
+<li class="chapter" data-level="C.3" data-path="C-screeplots.html"><a href="C-screeplots.html#scree-plot-of-figure-reffigoverviewcca"><i class="fa fa-check"></i><b>C.3</b> Scree plot of Figure @ref(fig:overviewCCA)</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -235,7 +238,7 @@ Figure 2.2: Species response (or abundance-) curves in most cases show a unimoda
 <li><p>Symmetry: the distance from A to B is the same as the distance from B to A:<span class="math inline">\(D(a,b) = D(b,a)\)</span></p></li>
 <li><p>Triangle inequality: The sum of two sides of a triangle of points in Euclidean space is equal to or longer than the third side. In other words, the shortest distance between two points in Euclidean space is a straight line:<span class="math inline">\(D(a,b) + D(b,c) \geq D(a,c)\)</span></p></li>
 </ol>
-<p>When one or more of the four properties are not satisfied, in most cases the fourth property (triangle inequality), the coefficients calculated are not concidered to be distance coefficients, they are then termed semi-metric coefficients. When this is the case, distances cannot be ordinated (at least reliably) in Euclidean space and nMDS is the optimal ordination method. Therefore carefully concidering whether the chosen metric is suitable for the ordination method used is important, if not then interpretation of the result should be done with caution. When all four properties are met, both nMDS and PCoA can be used. Dissimilarity and similarity coefficients can be both metric or semi-metric. They are often just termed similarity coefficients because it is straight forward to convert dissimilarity coefficients (D) to similarity coefficients (S) and vice versa: <span class="math inline">\(S=1-D\)</span>.<span class="citation">(P. Legendre &amp; Legendre, 2012)</span></p>
+<p>When one or more of the four properties are not satisfied, in most cases the fourth property (triangle inequality), the coefficients calculated are not concidered to be <em>distance</em> coefficients, they are then termed <em>semi-metric</em> coefficients. When this is the case, distances cannot be ordinated (at least reliably) in Euclidean space and nMDS is the optimal ordination method. Therefore concidering whether the chosen metric is suitable for the ordination method used is important, if not then interpretation of the result should be done with caution. When all four properties are met, both nMDS and PCoA can be used. Dissimilarity and similarity coefficients can be both metric or semi-metric. They are often just termed similarity coefficients because it is straight forward to convert dissimilarity coefficients (D) to similarity coefficients (S) and vice versa: <span class="math inline">\(S=1-D\)</span>.<span class="citation">(P. Legendre &amp; Legendre, 2012)</span></p>
 <p>LIST OF COMMON METRICS: BRAY-CURTIS, KULCZYNSKI, JACCARD, MANHATTAN/CITYBLOCK METRICS ETC</p>
 </div>
 </div>
@@ -288,6 +291,7 @@ Figure 2.4: The main structure of two-dimensional data can often be described in
 <p>Perhaps the most appropriate ordination method for ecological data is Correspondence Analysis (CA) because it represents the differences between sites hypothesising a unimodal distribution, which fits the species niche theory well, as discussed in Chapter <a href="2-ordination.html#nichedoublezero">2.2</a>. As the name suggests, CA tries to represent the <em>correspondence</em> between samples and species by testing how “this species correspond to that site”. CA is thus concidered more of a qualitative representation of the data and is based on the Pearson chi-squared statistic of the form <span class="math inline">\(\chi^2 = \sum\frac{(observed-expected)^2}{expected}\)</span>.</p>
 <p>CA is developed by several authors independently and has several different names, for example <em>contingency table analysis</em>, <em>reciprocal averaging</em>, <em>weighted averaging</em>, <em>dual scaling</em> or <em>homogeneity analysis</em>. Fundamentally, CA calculates the weighted averages of the sample scores as defined by the <span class="math inline">\(\chi^2\)</span>-metric described below, where the weights are, with community composition data, specifically species abundances. This means that species abundances to some degree contribute to the calculated distances, however they are also calculated relative to the average abundances and therefore does not influence the results as much as with the Euclidean-based ordination methods. This has the consequence that low abundant species may have an unduly high influence on the results, because the abundances of common species contribute less to the calculated distance compared to low abundant species, which are often numerous. With CA, and CCA, it is therefore important to concider the importance of low abundant species in the particular study and give less weight if needed <span class="citation">(Braak &amp; Prentice, 1988; P. Legendre &amp; Gallagher, 2001)</span>.</p>
 <p>guldkorn:</p>
+<p>Since the distances between the samples are calculated as weighted averages of the species, absent species in samples have exactly zero weight.</p>
 <p>awesome for <span class="math inline">\(\beta\)</span>-diversity</p>
 <p>during the procedure, the result is matched with a random solution and a P-value can be extracted to reject the NULL-hypothesis of no association</p>
 <p>a site with more species than another will have higher chi-squared distances</p>
@@ -340,8 +344,9 @@ Figure 2.5: Principles of unconstrained analyses
         </div>
       </div>
 <a href="1-introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="3-aims.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
-
+<a href="3-aims.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
@@ -384,7 +389,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(script.src))
       script.src  = script.src.replace(/^https?:/, '');
     document.getElementsByTagName("head")[0].appendChild(script);
